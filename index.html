@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my jquery trainig</title>
+        <meta charset="utf-8">
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+    </head>
+    <body>
+          <script>
+            //將jquery寫在javascript中
+            $(document).ready(function(){
+                
+                $("#title").html("進度條");//title元速修改成進度條/css id寫法
+                $("#title")[0].innerHTML="進度條";//同上方效果
+                document.getElementById("title").innerHTML="進度條";//同上方效果
+
+                ///--------------------------------------
+                $(".content").html("no ok");//css class寫法
+            })
+            //jquery .ready縮簡寫法
+               $(function(){
+                $("#title").html("進度條");//title元速修改成進度條/css id寫法
+                $("#title")[0].innerHTML="進度條";//同上方效果
+                document.getElementById("title").innerHTML="進度條";//同上方效果
+
+                ///--------------------------------------
+                $(".content").html("no ok");//css class寫法
+          })
+        </script>
+        
+        
+      <h1 id="title">title</h1>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+      
+    </body>
+</html>

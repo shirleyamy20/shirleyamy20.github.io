@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my jquery trainig</title>
+        <meta charset="utf-8">
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+    </head>
+    <body>
+      
+      
+      <h1 id="title">title</h1>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <p class=content>OK</p>
+        <span class=content>tt</span>
+        <section>
+        <p class=content>aa</p>
+        <p class=content>aa</p>
+        <p class=content>aa</p>
+        <p class=content>aa</p>
+        <p class=content>aa</p>
+        </section>
+       <script>
+//        $(function(){
+//        $("#title").html("進度條");
+//        })
+//            console.log(typeof $);
+//            $("#title").html("進度條");//$("")=jquery("")
+//            console.log(typeof $("#title"));
+//            console.log($(".content").length);
+//           console.log($("span").length);
+//           
+//           $("section").html("");//將section內所有元素的html清空/jquery寫法
+//           document.getElementsByTagName("section").innerHTML="";//html寫法
+//           
+           
+           var titlestring=$("title").html();
+           alert(titlestring);//html裡面不放值時，會回傳對應title元素裡的內容
+           var titlestring2=$("title").html("進度條2");
+           alert(titlestring2);//html裡面不放值時，會回傳一個物件型態，並且修改title元素裡的html內容
+        </script>
+        
+<!--        css寫法--
+<!--
+        <style>
+            #title{
+                font-size: 20px;
+                color: blue;
+            }
+            .content{
+                color:red;
+            }
+        </style>
+-->
+    </body>
+</html>
